@@ -66,10 +66,22 @@ html {
   font-size: 0.520835vw;
 }
 body {
-  color: #ffffff;
-  background: #00255b;
+  color: #00255b;
+  background: #ffffff;
   font-family: "Prompt";
   font-style: normal;
   font-weight: 300;
   line-height: 110%;
+}
+@media (max-width: 48em) {
+  html {
+    font-size: 5px;
+    font-size: 1.5625vw;
+    font-size: calc((100 / 320) * 5vw); // где 320 это ширина моб версии макета
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    -webkit-text-size-adjust: none;
+  }
 }

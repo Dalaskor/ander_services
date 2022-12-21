@@ -49,4 +49,33 @@
       color: #00255b;
     }
   }
+  &_profile {
+    width: 4.8rem;
+    height: 4.8rem;
+    svg {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+    &:hover {
+      background: #00a6fb;
+      border-color: #00a6fb;
+    }
+  }
+  &_action {
+    width: 28.8rem;
+    height: 4.5rem;
+    &:hover {
+      background: #00a6fb;
+      border-color: #00a6fb;
+    }
+    &_blue {
+      background: #0f95f7;
+      border-color: #0f95f7;
+      &:hover {
+        background: #ffffff;
+        border-color: #ffffff;
+        color: #00255b;
+      }
+    }
+  }
 }

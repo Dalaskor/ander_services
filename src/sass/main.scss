@@ -7,8 +7,18 @@
   max-width: 139.6rem; // Ширина контейнера в макете + 15px * 2 из padding
   margin: 0rem auto;
   padding: 0rem 1.5rem; // Отступы безопасности для адаптива
+
+  @media (max-width: 48rem) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.scroll-lock {
+  overflow: hidden;
 }
 
 @import "block/components";
 @import "block/header";
 @import "block/navbar";
+@import "block/mobile-menu";

@@ -1,4 +1,7 @@
 .navbar {
+  @media (max-width: 48rem) {
+    display: none;
+  }
   &__list {
     display: flex;
     align-items: center;

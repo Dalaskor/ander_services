@@ -1,5 +1,6 @@
 .header {
   padding: 1.9rem 0rem 1.6rem 0rem;
+  background: #00255b;
   &__container {
     display: flex;
     align-items: center;
@@ -7,13 +8,46 @@
   }
   &__logo {
   }
+  .header__burger {
+    display: none;
+    svg {
+      width: 3.2rem;
+      height: 2.5rem;
+      &.open {
+        display: block;
+      }
+      &.close {
+        display: none;
+      }
+    }
+    &.opened {
+      svg.open {
+        display: none;
+      }
+      svg.close {
+        display: block;
+      }
+    }
+    @media (max-width: 48rem) {
+      display: block;
+    }
+  }
   &__menu {
   }
   &__btns {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     gap: 2.4rem;
+    &_active {
+      display: flex;
+      @media (max-width: 48rem) {
+        display: none;
+      }
+    }
+    @media (max-width: 48rem) {
+      display: none;
+    }
   }
   &__btn {
   }
