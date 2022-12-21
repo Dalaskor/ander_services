@@ -18,7 +18,32 @@
   overflow: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
 @import "block/components";
 @import "block/header";
 @import "block/navbar";
 @import "block/mobile-menu";
+
+@import "block/footer";
