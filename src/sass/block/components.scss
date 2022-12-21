@@ -1,0 +1,52 @@
+.logo {
+  max-width: 4.4rem;
+  max-height: 2.8rem;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+    svg {
+      path {
+        fill: #0f95f7;
+      }
+    }
+  }
+}
+.btn {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  border: 0.2rem solid #ffffff;
+  transition: all 0.3s ease-in;
+  &:hover {
+    cursor: pointer;
+  }
+  &_login {
+    width: 13.5rem;
+    height: 4.5rem;
+    &:hover {
+      background: #00a6fb;
+      border-color: #00a6fb;
+    }
+  }
+  &_registration {
+    width: 28.8rem;
+    height: 4.5rem;
+    background: #0f95f7;
+    border-color: #0f95f7;
+    &:hover {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: #00255b;
+    }
+  }
+}

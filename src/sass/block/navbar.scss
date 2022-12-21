@@ -1,0 +1,27 @@
+.navbar {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.4rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    display: block;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #ffffff;
+    transition: all 0.3s ease-in;
+    &:hover {
+      cursor: pointer;
+      color: #0f95f7;
+    }
+  }
+}
