@@ -68,9 +68,11 @@
     height: 1rem;
     background: #ffffff;
     border-radius: 10rem;
+    transition: all 0.3s ease 0s;
     &_active {
       width: 5rem;
       background: #0f95f7;
+      transition: all 0.3s ease 0s;
     }
   }
 }
