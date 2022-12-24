@@ -1,12 +1,11 @@
 .footer {
   position: relative;
   padding-bottom: 5.2rem;
-  padding-top: 12rem;
-  width: 100%;
-  background-image: url("../img/footer.svg");
-  background-position-x: -0.6rem;
+  padding-top: 20.5rem;
+  background-image: url("../img/footer2.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   &__container {
     display: flex;
     align-items: center;
@@ -16,21 +15,22 @@
       flex-direction: column;
       justify-content: center;
       gap: 2.7rem;
+      margin-top: 10rem;
     }
   }
   &__decor {
     display: block;
     position: absolute;
-    top: -13.8rem;
+    top: -14.2rem;
+    // left: -12.3rem;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
     z-index: 20;
-    svg {
+    & svg {
       width: 217.5rem;
       height: 21.2rem;
     }
     @media (max-width: 48rem) {
-      transform: translate(0, 0);
       top: -10.8rem;
       left: -108rem;
     }

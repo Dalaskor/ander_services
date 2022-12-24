@@ -1,0 +1,84 @@
+.hero {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &__decor {
+    display: block;
+    position: absolute;
+    top: 59.1rem;
+    // left: -12.3rem;
+    left: 49%;
+    transform: translate(-49%, 0%);
+    z-index: 20;
+    svg {
+      width: 217.5rem;
+      height: 21.2rem;
+    }
+    @media (max-width: 48rem) {
+      left: 47%;
+    }
+  }
+  &__container {
+    padding-top: 24.6rem;
+    padding-bottom: 10.7rem;
+  }
+  .hero__hero-swiper {
+    width: 60.9rem;
+    // height: 44.4rem;
+    overflow-x: hidden;
+  }
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    color: #ffffff;
+    max-width: 60.9rem;
+    &:hover {
+      cursor: default;
+    }
+  }
+  &__description {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #ffffff;
+    max-width: 48.7rem;
+    margin-top: 2.4rem;
+    &:hover {
+      cursor: default;
+    }
+  }
+  &__btn {
+    margin-top: 6.4rem;
+  }
+}
+
+.hero-swiper {
+  &__pagination {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 12.8rem;
+  }
+  &__bullet {
+    width: 1rem;
+    height: 1rem;
+    background: #ffffff;
+    border-radius: 10rem;
+    &_active {
+      width: 5rem;
+      background: #0f95f7;
+    }
+  }
+}
+
+.decor-hide {
+  @media (max-width: 48rem) {
+    display: none;
+  }
+}
