@@ -32,19 +32,36 @@
   font-style: normal;
 }
 
+// @font-face {
+//   font-family: "Prompt";
+//   font-display: swap;
+//   src: url("../font/Prompt-Light.ttf") format("truetype");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Prompt";
+//   font-display: swap;
+//   src: url("../font/Prompt-Light.woff2") format("woff2"),
+//     url("../font/Prompt-Light.woff") format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+
 @font-face {
   font-family: "Prompt";
   font-display: swap;
-  src: url("./../font/Prompt-Light.ttf") format("truetype");
+  src: url("../font/Inter-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Ubuntu";
+  font-family: "Prompt";
   font-display: swap;
-  src: url("./../font/Prompt-Light.woff2") format("woff2"),
-    url("./../font/Prompt-Light.woff") format("woff");
+  src: url("../font/Inter-Light.woff2") format("woff2"),
+    url("../font/Inter-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }

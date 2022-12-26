@@ -69,6 +69,7 @@ $(document).ready(function () {
     direction: "horizontal",
     slidesPerView: 1,
     loop: true,
+    allowTouchMove: true,
     pagination: {
       el: ".software-swiper__pagination",
       type: "bullets",
@@ -79,6 +80,9 @@ $(document).ready(function () {
     breakpoints: {
       769: {
         slidesPerView: 3,
+        loop: false,
+        allowTouchMove: false,
+        pagination: false,
       },
     },
   });
