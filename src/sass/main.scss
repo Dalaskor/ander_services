@@ -4,7 +4,7 @@
 @import "_mixins";
 
 [class*="__container"] {
-  max-width: 139.6rem; // Ширина контейнера в макете + 15px * 2 из padding
+  max-width: 128rem; // Ширина контейнера в макете + 15px * 2 из padding
   margin: 0rem auto;
   padding: 0rem 1.5rem; // Отступы безопасности для адаптива
 
@@ -44,7 +44,7 @@ footer {
 
 .decor-left {
   position: absolute;
-  left: 0;
+  left: 5.8rem;
   top: 76rem;
   width: 21.1rem;
   height: 217.1rem;
@@ -58,7 +58,7 @@ footer {
 }
 .decor-right {
   position: absolute;
-  right: 0;
+  right: 2.5rem;
   bottom: -5rem;
   width: 21.1rem;
   height: 217.1rem;
