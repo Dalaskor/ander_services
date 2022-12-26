@@ -23,6 +23,9 @@ $(document).ready(function () {
     modules: [Pagination],
     direction: "horizontal",
     loop: false,
+    autoplay: {
+      delay: 500,
+    },
     pagination: {
       el: ".hero-swiper__pagination",
       type: "bullets",
@@ -30,10 +33,6 @@ $(document).ready(function () {
       bulletActiveClass: "hero-swiper__bullet_active",
       clickable: true,
     },
-    // autoplay: {
-    //   delay: 500,
-    // },
-    autoplay: true,
   });
   // Слайдер Infrastructure
   const infroSwiper = new Swiper(".swiper-infro", {
@@ -57,10 +56,29 @@ $(document).ready(function () {
           el: ".swiper-infro-pag-mob",
         },
       },
-      768: {
+      769: {
         pagination: {
           el: ".swiper-infro-pag",
         },
+      },
+    },
+  });
+  // Слайдер SoftWare
+  const softwareSwiper = new Swiper(".software-swiper", {
+    modules: [Pagination],
+    direction: "horizontal",
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".software-swiper__pagination",
+      type: "bullets",
+      bulletClass: "software-swiper__bullet",
+      bulletActiveClass: "software-swiper__bullet_active",
+      clickable: true,
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 3,
       },
     },
   });
