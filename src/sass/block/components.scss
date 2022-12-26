@@ -77,5 +77,13 @@
         color: #00255b;
       }
     }
+    &_white {
+      background: #ffffff;
+      border-color: #00255b;
+      color: #00255b;
+      &:hover {
+        color: #ffffff;
+      }
+    }
   }
 }
