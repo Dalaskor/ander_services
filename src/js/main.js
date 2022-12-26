@@ -18,6 +18,19 @@ $(document).ready(function () {
     $(".header__burger").removeClass("opened");
     $("html").removeClass("scroll-lock");
   });
+  // Плавная прокрутка
+  $("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor).offset().top - 60,
+        },
+        800
+      );
+  });
   // Слайдер Hero
   const heroSwiper = new Swiper(".hero-swiper", {
     modules: [Pagination],
